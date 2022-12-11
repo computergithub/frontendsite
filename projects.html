@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.mith.in</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        font-family: sans-serif;
+
+    }
+
+    body {
+        margin: 0 auto;
+        background-color: rgb(15 4 42);
+    }
+
+    section {
+
+        height: 100vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .container {
+
+
+        background-color: #22124a;
+        /* border: 1px solid white; */
+        color: white;
+        display: grid;
+        grid-template-columns: 3.3fr 2fr;
+        justify-items: center;
+        gap: 4rem;
+        align-items: center;
+        /* width: 70%; */
+    }
+
+    .image img {
+        height: 22rem;
+    }
+
+    .pera-sec {
+        display: grid;
+        padding: 0rem 3rem;
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    p {
+        line-height: 1.5rem;
+        color: rgb(163, 162, 162);
+        font-size: 1rem;
+    }
+
+    .list {
+        display: flex;
+        gap: 3rem;
+    }
+
+    @media only screen and (max-width:860px) {
+        body {
+
+            background-color: rgba(255, 0, 0, 0.534);
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            /* width: 100%; */
+        }
+
+        .list {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .image img {
+            height: 14rem;
+        }
+
+        .pera-sec {
+            padding: 0 1.3rem;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+        }
+    }
+</style>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="pera-sec">
+                <h1>Get <span style="color: rgb(134, 41, 177);"> insights </span> that help your business grow.</h1>
+                <p>Discover the benefits of data analytics and make
+                    better decisions regarding revenue, customer experience, and overall
+                    efficiency...</p>
+                <div class="list">
+                    <div class="numlist"><b>10K+</b>
+                        <p>COMPANIES</p>
+                    </div>
+                    <div class="numlist"><b>314</b>
+                        <p>TEMPLATES </p>
+                    </div>
+                    <div class="numlist"><b>12M+</b>
+                        <p> QUERIES</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image"><img src="login img.jpg" alt=""></div>
+        </div>
+    </section>
+</body>
+
+</html>
